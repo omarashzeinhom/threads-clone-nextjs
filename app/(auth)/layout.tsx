@@ -1,26 +1,19 @@
-import { ClerkProvider } from "@clerk/nextjs";
-import { Inter } from "next/font/google";
-import React from "react";
-import '../globals.css';
-
+import { ClerkProvider } from '@clerk/nextjs'
+ 
 export const metadata = {
-  title: "Threads",
-  description: "A Next.js 13 Meta Threads App!",
-};
-
-const inter = Inter({ subsets: ["latin"] });
-
+  title: 'Clerk',
+}
+ 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  return;
-  <ClerkProvider>
-    <html lang="en">
-      <body className={`${inter.className}`}>
-        {children}
-        </body>
-    </html>
-  </ClerkProvider>;
+  return (
+    <ClerkProvider>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </ClerkProvider>
+  )
 }
