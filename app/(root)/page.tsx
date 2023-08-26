@@ -1,5 +1,11 @@
 import { UserButton } from "@clerk/nextjs";
 
+export const metadata = {
+  title: "Threads",
+  description: "A Social Media Platform",
+};
+
+
 export default function Home() {
   return (
     <div>

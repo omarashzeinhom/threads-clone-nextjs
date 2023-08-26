@@ -1,12 +1,11 @@
 import { ClerkProvider } from '@clerk/nextjs'
-import {Inter} from "next/font/google";
  
 export const metadata = {
-  title: 'Clerk',
-}
- 
-const inter = Inter({ subsets: ["latin"]})
+  title: "Threads",
+  description: "A Social Media Platform",
+};
 
+ 
 export default function RootLayout({
   children,
 }: {
@@ -15,7 +14,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter?.className}>{children}</body>
+        <body>{children}</body>
       </html>
     </ClerkProvider>
   )
