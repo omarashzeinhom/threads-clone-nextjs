@@ -5,7 +5,6 @@ export const metadata = {
   description: "A Social Media Platform",
 };
 
-
 export default function Home() {
   return (
     <div>
